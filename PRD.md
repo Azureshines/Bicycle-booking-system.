@@ -17,4 +17,4 @@
 - **University Administration:** Funds and oversees campus mobility initiatives.
 
 ## 3.Current workarounds
-- **How students cope today**Students either walk long distances in harsh weather, wait in long queues for campus shuttles, or use a manual paper-and-pen sign-out system at select security posts where they leave their student ID cards as collateral.
+- **How students cope today:*Students cope by going to class extra early so as to not be late for thier classes. Some students have the contact details of some tricycle drivers and can call them when they need to go to somewhere 
