@@ -30,7 +30,7 @@ Introduce a **Campus Bicycle Booking & Rental System** designed specifically for
 * **System Administrators (Fleet & Ops Managers):** Campus staff or student operators responsible for bicycle maintenance, inventory tracking, hub management, and verifying student bookings.
 
 ## User Stories
-### Student Onboarding & Verification**
+### Student Onboarding & Verification:
 **Account Registration**: As a Babcock University student, I want to register on the platform using my university email and matriculation number, so that my identity is verified and tied to my campus residence profile.
 
 **Safety & Liability Agreement**: As a first-time renter, I want to review and digitally sign the campus bicycle safety rules and liability terms, so that I understand approved riding routes, designated parking zones, and damage policies before riding.
@@ -51,3 +51,22 @@ Introduce a **Campus Bicycle Booking & Rental System** designed specifically for
 **Phase 2**: Campus-Wide Expansion (Months 2–3): Scale the fleet to 200+ bicycles across all major male and female halls and academic complexes, introducing 14-day and 30-day exam passes alongside in-app extensions.
 
 **Phase 3**: Optimization & Campus Integration (Semester 2+): Integrate campus smart-ID tap checkouts, expand covered bicycle parking racks across lecture blocks, and use historical route demand data to automate hub rebalancing.
+## Fleet Management & Administration
+**Live Fleet Dashboard**: As a Fleet Operations Manager, I want to view the real-time status of every bicycle (Available, Rented, Overdue, Under Maintenance), so that I can monitor utilization and redistribute bikes across busy hubs.
+
+**Automated Expiry & Overdue Alerts**: As an Ops Manager, I want the system to send automated reminders to students before their rental expires—and automatically calculate late fees if overdue—so that fleet turnover stays predictable without manual follow-ups.
+
+**Maintenance & Repair Tracking**: As a Maintenance Technician, I want to log repairs, spare part replacements, and service checks against specific bicycle serial numbers, so that unsafe bicycles are locked from booking until cleared.
+
+## Core Features & Functional Requirements
+**University Identity Verification**: Validates student matriculation numbers and campus email addresses during onboarding, linking every rental to a verified student record and hall of residence.
+
+**Tiered Multi-Day Booking Engine**: Supports 3-day, 7-day, 14-day, and 30-day rental tiers with discounted weekly rates, automatic refundable caution deposit handling, and a 10-minute checkout inventory hold.
+
+**Hub Check-In & Check-Out Portal**: Lightweight mobile interface for hub attendants to scan student QR codes, log bicycle and lock serial IDs, record pre- and post-ride inspection checklists, and complete handovers.
+
+**Automated Notification System**: Sends SMS, email, and push notifications for booking confirmations, pickup windows, 24-hour and 2-hour expiry warnings, overdue notices, and maintenance swap approvals.
+
+**Issue Reporting & Maintenance Workflow**: Enables students to submit photo-backed mechanical reports and immediately flags affected bicycles as unavailable in the admin dashboard until serviced.
+
+**Usage & Demand Analytics**: Tracks peak booking periods (such as mid-semester tests and exams) and high-demand hubs to guide fleet expansion and staffing schedules.
