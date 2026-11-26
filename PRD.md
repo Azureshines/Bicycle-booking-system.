@@ -83,5 +83,5 @@ Introduce a **Campus Bicycle Booking & Rental System** designed specifically for
 
 ## User Stories
 ### Student Onboarding & Verification:
-**Account Registration**: As a Babcock University student, I want to register on the platform using my university email and matriculation number, so that my identity is verified and tied to my campus residence profile.
-**Safety & Liability Agreement**: As a first-time renter, I want to review and digitally sign the campus bicycle safety rules and liability terms, so that I understand approved riding routes, designated parking zones, and damage policies before riding.
+- **Account Registration**: As a Babcock University student, I want to register on the platform using my university email and matriculation number, so that my identity is verified and tied to my campus residence profile.
+- **Safety & Liability Agreement**: As a first-time renter, I want to review and digitally sign the campus bicycle safety rules and liability terms, so that I understand approved riding routes, designated parking zones, and damage policies before riding.
