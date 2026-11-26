@@ -11,11 +11,11 @@ While Kekes serve as the default transit option, relying on them creates several
 
 ---
 
-## 2. Proposed Solution
+## 2. Product overview:
 
 Introduce a **Campus Bicycle Booking & Rental System** designed specifically for Babcock University students. Rather than competing with Kekes on a stressful, per-minute basis, the platform allows students to **book and rent bicycles for extended periods (multiple days or full weeks)**.
 
-### Key Value Propositions
+### Business objectives
 * **Guaranteed Personal Mobility:** Students have a dedicated bicycle at their disposal for the duration of their rental period, eliminating wait times at pickup hubs.
 * **Cost-Effective Alternative:** Multi-day and weekly rental tiers offer an affordable middle ground between exhausting daily walks and expensive "private Keke" arrangements.
 * **Campus-Wide Access:** Students can commute directly between hostels, lecture halls, the cafeteria, and sports facilities on their own schedule.
@@ -29,9 +29,6 @@ Introduce a **Campus Bicycle Booking & Rental System** designed specifically for
 * **Primary Users (Students):** Undergraduate and postgraduate students living on campus who need reliable, affordable, and flexible daily transportation between halls of residence and academic buildings.
 * **System Administrators (Fleet & Ops Managers):** Campus staff or student operators responsible for bicycle maintenance, inventory tracking, hub management, and verifying student bookings.
 
-## User Stories
-### Student Onboarding & Verification:
-**Account Registration**: As a Babcock University student, I want to register on the platform using my university email and matriculation number, so that my identity is verified and tied to my campus residence profile.
 
 **Safety & Liability Agreement**: As a first-time renter, I want to review and digitally sign the campus bicycle safety rules and liability terms, so that I understand approved riding routes, designated parking zones, and damage policies before riding.
 ## Success Metrics (KPIs)
@@ -70,3 +67,20 @@ Introduce a **Campus Bicycle Booking & Rental System** designed specifically for
 **Issue Reporting & Maintenance Workflow**: Enables students to submit photo-backed mechanical reports and immediately flags affected bicycles as unavailable in the admin dashboard until serviced.
 
 **Usage & Demand Analytics**: Tracks peak booking periods (such as mid-semester tests and exams) and high-demand hubs to guide fleet expansion and staffing schedules.
+
+## Stake holders:
+**University Administration & Student Affairs Division**: Approves campus-wide operational policies, designated cycling lanes, parking zones, and student liability agreements.
+
+**Babcock University Security Services**: Enforces campus traffic rules, prevents bicycle theft or unauthorized off-campus removal, and assists with incident resolution.
+
+** Facilities & Works Department**: Allocates physical space for pickup/drop-off hubs, installs covered bicycle racks, and maintains campus road signage.
+
+**Student Union / Hall Representatives (BUSA)**: Advocates for student pricing affordability, gathers feedback on hub placement, and promotes campus adoption.
+
+**University IT & Finance Departments**: Supports student matriculation/email verification integration, payment gateway settlement, and security deposit reconciliation.
+
+**Existing Campus Transport Operators (Keke Association)**: Key operational stakeholder whose routes and hub zones must be coordinated alongside bicycle parking hubs to prevent traffic congestion.
+
+## User Stories
+### Student Onboarding & Verification:
+**Account Registration**: As a Babcock University student, I want to register on the platform using my university email and matriculation number, so that my identity is verified and tied to my campus residence profile.
