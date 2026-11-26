@@ -1,5 +1,3 @@
-<img width="1103" height="841" alt="image" src="https://github.com/user-attachments/assets/43645914-274d-4b27-a4b8-d54c20ced2a4" /># Product Requirements Document (PRD): Babcock Campus Bicycle Rental System
-
 ## 1. Background & Problem Statement
 
 Students at Babcock University currently face significant daily friction when commuting across campus due to the lack of a dedicated, student-accessible transit system. At present, the primary mode of motorized campus transport consists of staff-operated auto-rickshaw tricycles, locally known as **Keke**.
