@@ -73,7 +73,7 @@ Introduce a **Campus Bicycle Booking & Rental System** designed specifically for
 
 **Babcock University Security Services**: Enforces campus traffic rules, prevents bicycle theft or unauthorized off-campus removal, and assists with incident resolution.
 
-** Facilities & Works Department**: Allocates physical space for pickup/drop-off hubs, installs covered bicycle racks, and maintains campus road signage.
+**Facilities & Works Department**: Allocates physical space for pickup/drop-off hubs, installs covered bicycle racks, and maintains campus road signage.
 
 **Student Union / Hall Representatives (BUSA)**: Advocates for student pricing affordability, gathers feedback on hub placement, and promotes campus adoption.
 
@@ -83,5 +83,87 @@ Introduce a **Campus Bicycle Booking & Rental System** designed specifically for
 
 ## User Stories
 ### Student Onboarding & Verification:
-- **Account Registration**: As a Babcock University student, I want to register on the platform using my university email and matriculation number, so that my identity is verified and tied to my campus residence profile.
-- **Safety & Liability Agreement**: As a first-time renter, I want to review and digitally sign the campus bicycle safety rules and liability terms, so that I understand approved riding routes, designated parking zones, and damage policies before riding.
+**Account Registration**: As a Babcock University student, I want to register on the platform using my university email and matriculation number, so that my identity is verified and tied to my campus residence profile.
+**Safety & Liability Agreement**: As a first-time renter, I want to review and digitally sign the campus bicycle safety rules and liability terms, so that I understand approved riding routes, designated parking zones, and damage policies before riding.
+
+## Non-Functional Requirements
+**Performance & Low-Bandwidth Resilience**: Campus mobile data fluctuates around hostels and academic blocks. Core booking screens must load within 3 seconds on 3G/4G connections, and active booking QR codes/PINs must be cached offline for seamless hub pickups.
+
+**Availability & Reliability**: The platform must maintain 99.5% uptime during active academic semesters, particularly during peak morning rush (7:00 AM – 9:00 AM) and exam weeks.
+
+**Security & Data Privacy**: All digital payments must be processed via PCI-DSS compliant gateways. Student records (matriculation numbers, phone numbers, and hall details) must be encrypted in transit and at rest, with role-based access control restricting sensitive data to authorized campus administrators.
+
+**Usability & Accessibility**: Mobile-first responsive interface requiring minimal onboarding friction—a verified student should be able to complete a multi-day booking in under 2 minutes.
+
+**Scalability**: System architecture must support an initial pilot of 50–100 bicycles across 3–4 hubs and scale smoothly to 500+ bicycles across all residential halls and faculties without re-architecting.
+
+## Scope & Priorities
+**In-Scope (MVP - Phase 1)**
+***P0 (Must-Have)***:
+
+- Student onboarding and verification via Babcock University email (@student.babcock.edu.ng) and matriculation number.
+
+- Real-time bicycle availability view per campus hub.
+
+- Multi-day and weekly booking engine (3-day, 7-day, and 14-day tiers) with refundable caution deposit handling.
+
+- Digital payment integration (bank transfer, USSD, debit card).
+
+- Hub attendant QR/PIN check-in, condition inspection checklist, and return sign-off portal.
+
+- Admin fleet dashboard tracking bicycle status (Available, Rented, Overdue, Under Maintenance).
+
+***P1 (Should-Have):***
+
+-Automated SMS/email/push reminders (booking confirmation, 24-hour and 2-hour expiry alerts, overdue notices).
+
+- In-app rental extension workflow.
+
+- Mid-rental mechanical issue reporting and hub swap workflow.
+
+***P2 (Nice-to-Have):***
+
+-Demand and route analytics dashboard for peak-period fleet rebalancing.
+
+-Campus smart-ID tap integration at hub terminals.
+
+**Out-of-Scope (Phase 1)**
+- Per-minute or hourly dockless/GPS-unlocked rentals (the system relies on multi-day hub-to-hub rentals with physical locks).
+
+- Off-campus riding or external town rentals outside Babcock University premises.
+
+- Native iOS/Android app store releases (MVP will launch as a mobile-first Progressive Web App to avoid app-store friction and save student device storage).
+
+## Acceptance Criteria
+**Student Verification**: Users cannot reserve a bicycle until their @student.babcock.edu.ng email is verified via OTP and their matriculation number and Hall of Residence are saved to their profile.
+
+**Inventory Locking & Booking**: Selecting a hub and rental tier holds an available bicycle for 10 minutes during checkout; completing payment generates a unique booking QR code, 6-digit PIN, and digital receipt within 5 seconds.
+
+**Pickup & Inspection Handover**: Scanning a valid QR code at the designated hub displays the student's photo/matriculation ID to the attendant, logs the assigned bicycle and lock serial IDs, and requires both parties to confirm baseline condition before starting the rental timer.
+
+**Rental Extension**: An active renter can extend their booking up to 6 hours before expiration, provided the bicycle is not reserved by a waitlist, with prorated fees charged immediately and the return deadline updated in real time.
+
+**Breakdown & Swap**: Submitting an in-app mechanical issue ticket flags the current bicycle as "Under Maintenance" upon hub drop-off and allows the attendant to assign a replacement bicycle without charging a second rental fee.
+
+**Return & Deposit Release**: When a hub attendant completes the post-ride inspection checklist and marks the bike returned, the rental status closes immediately, overdue timers stop, and the caution deposit refund workflow triggers automatically if no damage is logged.
+
+**Overdue Notifications**: System triggers automated notifications 24 hours and 2 hours prior to expiration, applies a configurable 1-hour grace period, and automatically calculates hourly/daily late fees once the grace period expires.
+
+## Assumptions & Open Questions
+**Assumptions**
+- Campus Infrastructure: Babcock University management will approve designated, covered bicycle parking racks at key hubs (e.g., Ameyo Hall, Cafeteria Axis, and distant residential clusters) prior to launch.
+
+- Physical Security: Heavy-duty U-locks or chain locks issued with each bicycle, combined with campus gate security checks, are sufficient to prevent theft without requiring expensive real-time GPS trackers on every frame during the pilot.
+
+- Student Smartphone Access: Over 90% of target students own an internet-enabled smartphone capable of accessing a mobile web app and displaying a QR code.
+
+- Staffing Model: Hubs will be staffed during operating hours (e.g., 6:30 AM – 8:00 PM) by trained student work-study attendants or dedicated campus operations personnel.
+
+**Open Questions**
+- Caution Deposit Amount & Refund Timeline: What refundable deposit amount balances theft/damage deterrence without pricing out average students, and how quickly can the finance/payment gateway process automated refunds?
+
+- Overnight & Curfew Policies: Are students permitted to keep rented bicycles parked at their residential halls overnight, or must all bikes be checked into a hub before campus curfew?
+
+- Keke Association Coordination: Which specific campus lanes or drop-off zones need clear demarcation to prevent friction between bicycle riders and existing Keke operators?
+
+- Damage Liability Thresholds: How will normal wear-and-tear (e.g., punctured tubes from campus roads) be distinguished from student negligence during post-ride hub inspections?
