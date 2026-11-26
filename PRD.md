@@ -1,4 +1,4 @@
-# Product Requirements Document (PRD): Babcock Campus Bicycle Rental System
+<img width="1103" height="841" alt="image" src="https://github.com/user-attachments/assets/43645914-274d-4b27-a4b8-d54c20ced2a4" /># Product Requirements Document (PRD): Babcock Campus Bicycle Rental System
 
 ## 1. Background & Problem Statement
 
@@ -23,9 +23,33 @@ Introduce a **Campus Bicycle Booking & Rental System** designed specifically for
 * **Campus-Wide Access:** Students can commute directly between hostels, lecture halls, the cafeteria, and sports facilities on their own schedule.
 * **Weather & Time Efficiency:** Cuts down transit time under harsh sun and high temperatures, allowing students to arrive at classes faster and with less physical fatigue.
 
+
 ---
 
 ## 3. Target Users
 
 * **Primary Users (Students):** Undergraduate and postgraduate students living on campus who need reliable, affordable, and flexible daily transportation between halls of residence and academic buildings.
 * **System Administrators (Fleet & Ops Managers):** Campus staff or student operators responsible for bicycle maintenance, inventory tracking, hub management, and verifying student bookings.
+
+## User Stories
+### Student Onboarding & Verification**
+**Account Registration**: As a Babcock University student, I want to register on the platform using my university email and matriculation number, so that my identity is verified and tied to my campus residence profile.
+
+**Safety & Liability Agreement**: As a first-time renter, I want to review and digitally sign the campus bicycle safety rules and liability terms, so that I understand approved riding routes, designated parking zones, and damage policies before riding.
+## Success Metrics (KPIs)
+**Student Adoption Rate**: Percentage of on-campus students creating verified accounts within the first semester (Target: 25% of the student body).
+
+**Fleet Utilization Rate**: Percentage of active bicycles rented out on any given weekday during term time (Target: >75%).
+
+**Repeat Booking Rate**: Percentage of first-time renters who book a second multi-day or weekly rental within 30 days (Target: >60%).
+
+**On-Time Return Rate**: Percentage of rentals returned within the scheduled return window or grace period (Target: >90%).
+
+**Student Satisfaction Score (CSAT)**: Post-rental survey rating measuring commute time saved and relief from Keke and heat friction (Target: ≥ 4.5 / 5.0).
+
+## Phased Rollout Plan
+**Phase 1**: Campus Pilot (Weeks 1–4): Deploy 50 bicycles across 3 high-friction hubs (Ameyo Hall, Cafeteria Axis, and a distant hall cluster) offering 3-day and 7-day rentals to validate pricing, lock durability, and attendant workflows.
+
+**Phase 2**: Campus-Wide Expansion (Months 2–3): Scale the fleet to 200+ bicycles across all major male and female halls and academic complexes, introducing 14-day and 30-day exam passes alongside in-app extensions.
+
+**Phase 3**: Optimization & Campus Integration (Semester 2+): Integrate campus smart-ID tap checkouts, expand covered bicycle parking racks across lecture blocks, and use historical route demand data to automate hub rebalancing.
